@@ -1,0 +1,17 @@
+name: Greeting Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Greet the User
+        run: echo "Hello, ${{ github.actor }}! Thank you for your contribution."
