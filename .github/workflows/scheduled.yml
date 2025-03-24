@@ -1,0 +1,15 @@
+name: Echo Server Time
+
+on:
+  schedule:
+    # Cron syntax to run every 10 minutes
+    - cron: "*/10 * * * *"
+
+jobs:
+  echo-time:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Echo the current server time
+      - name: Display Server Time
+        run: echo "The current server time is: $(date '+%Y-%m-%d %H:%M:%S')"
