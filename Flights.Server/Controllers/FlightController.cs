@@ -8,11 +8,6 @@ namespace Flights.Server.Controllers;
 public class FlightController : ControllerBase
 {
     private Random random = new Random();
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     private readonly ILogger<FlightController> _logger;
 
     public FlightController(ILogger<FlightController> logger)
