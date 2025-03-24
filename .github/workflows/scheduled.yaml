@@ -12,4 +12,4 @@ jobs:
     steps:
       # Echo the current server time
       - name: Display Server Time
-        run: echo "The current server time is: $(date '+%Y-%m-%d %H:%M:%S')"
+        run: echo "The current server time is: $(date)"
